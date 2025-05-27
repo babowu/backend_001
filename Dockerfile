@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # 安装依赖
-RUN pip install flask
+RUN python -m pip install flask -i https://mirrors.cloud.tencent.com/pypi/simple/
 
 # 暴露端口
 EXPOSE 80
